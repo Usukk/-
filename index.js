@@ -100,7 +100,7 @@ window.addEventListener(
   false
 );
 
-// Favorite Slide
+//멀티 슬라이더
 const slides = document.querySelector(".slides");
 const slide = document.querySelectorAll(".slides li");
 const slideCount = slide.length;
@@ -145,3 +145,23 @@ prevBtn.addEventListener('click', function(event) {
 
   console.log("Previous button clicked", event); // 이벤트 객체 정보 로그 출력
 });
+
+//캔버스
+
+window.onload = function() {
+  var canvas = document.getElementById('footerCanvas');
+  if (canvas.getContext) {
+      var ctx = canvas.getContext('2d');
+    
+      // 텍스트 그리기
+      var text = '*과제 제출용 페이지입니다*'
+      ctx.font = '15px Montserrat';
+      ctx.fillStyle = '#6a75ca';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      var x= canvas.width/2;
+      var y= canvas.height/2;
+      ctx.fillText(text,x,y);
+  }
+};
