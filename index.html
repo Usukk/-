@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프로그래밍 과제</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loading_container">
+        <div class="loading_box">
+            <p class="loading">🍑</p>
+            <p>Loading</p>
+        </div>
+    </div>
+    
+        <section class="section-intro">
+          <header id="header">
+            <h1 class="txt-invisible">Portfolio</h1>
+            <nav>
+              <ul class="nav-list">
+                <li><a href="#home" class="list-link">HOME</a></li>
+                <li><a href="#about" class="list-link">ABOUT</a></li>
+                <li><a href="#issue" class="list-link">ISSUE</a></li>
+                <li><a href="#contact" class="list-link">CONTACT</a></li>
+              </ul>
+            </nav>
+            <div class="bar-bg">
+              <span class="bar-ing"></span>
+            </div>
+          </header>
+
+          <div class="cont-intro">
+            <a name="home"></a>
+            <img src="src/img/개발자.jpg" alt="프로필 이미지" />
+            <div>
+              <p class="txt-title"></p><br><br><br><br><br><br><br><br>
+              <p class="kor">저는 어릴때부터 게임하는 것을 좋아했고 제가 제일 좋아하게 된 게임을<br>
+              만들고 싶어졌습니다. 그래서 저는 게임 개발자가 되고싶습니다.<br>
+              </p>    
+            </div>
+            
+            
+          </div>
+        </section>
+
+        <section class="section-about">
+            <a name="about"></a>
+            <h2>About Me.</h2>
+            <div class="cont-about">
+              <div class="slide-container">
+                <div class="slide-album">
+                  <div class="slide-images">
+                    <img src="src/img/내사진2.jpg" alt="내 사진" />
+                    <img src="src/img/내사진3.jpg" alt="내 사진" />
+                    <img src="src/img/내사진1.jpg" alt="내 사진" />
+                  </div>
+                  <button class="btn-next">▶</button>
+                  <button class="btn-prev">◀</button>
+                </div>
+              </div>
+              <div class="info-about">
+                <dl class="txt-about">
+                  <div>
+                    <dt>이름</dt>
+                    <dd>강우석</dd>
+                  </div>
+                  <div>
+                    <dt>생년월일</dt>
+                    <dd>99.06.09</dd>
+                  </div>
+                  <div>
+                    <dt>거주지</dt>
+                    <dd>경기도 파주시</dd>
+                  </div>
+                  <div>
+                    <dt>학교/전공</dt>
+                    <dd>공주대학교/소프트웨어학과</dd>
+                  </div>
+                </dl>
+                <div class="btn-about">
+                  <button class="btn-open" type="button">
+                    <img src="src/img/역량.png" alt="" />역량
+                  </button>
+                  <button class="btn-open" type="button">
+                    <img src="src/img/관심사.png" alt="" />희망진로
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-issue">
+            <a name="issue"></a>
+            <h2>Interest Tec & Company.</h2>
+            <div class="category">
+          </div>
+          <div class="slide_warp">
+              <ul class="slides">
+                  <li>
+                      <div class="slide_img_box">
+                          <img src="src/img/unity.png" alt="unity">
+                      </div>
+                      <div class="slide_text_box">
+                          <span>01</span>
+                          <p class="title">unity</p>
+                          <p class="desc">유니티는 비디오 게임의 개발 환경을 제공하는 게임 엔진이자,
+                             3D 애니메이션과 가상현실 등 인터랙티브 콘텐츠 제작을 위한 통합 제작 도구이다.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="slide_img_box">
+                          <img src="src/img/언리얼엔진.jpg" alt="언리얼">
+                      </div>
+                      <div class="slide_text_box">
+                          <span>02</span>
+                          <p class="title">언리얼엔진</p>
+                          <p class="desc">
+                            언리얼 엔진은 미국의 에픽게임즈에서 개발한 3차원 게임 엔진이다.
+                             1994년부터 현재까지 꾸준한 개량을 통해 발전되고 있으며,
+                             수십 개의 비디오 게임에 사용되는 미들웨어 솔루션이다.
+                          </p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="slide_img_box">
+                          <img src="src/img/c언어.jpg" alt="c++">
+                      </div>
+                      <div class="slide_text_box">
+                          <span>03</span>
+                          <p class="title">C++/C#</p>
+                          <p class="desc">C++는 프로그래머의 자유도가 높은 언어로써,
+                            객체 지향이나 절차 지향 등의 설계에 제한을 두지 않는다.C#는 마이크로소프트에서 개발한 객체 지향 프로그래밍 언어이다.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="slide_img_box">
+                          <img src="src/img/우왁굳1.jpg" alt="우왁굳">
+                      </div>
+                      <div class="slide_text_box">
+                          <span>04</span>
+                          <p class="title">나의 성장과정</p>
+                          <p class="desc">중학교 때 인터넷 방송이란 걸 알게되었고 유튜브를 통해 많은
+                            미디어 매체를 접했다. 그 중 3년 전부터 "우왁굳"이라는 방송인은 내 삶에
+                            많은 영향을 끼쳤다.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="slide_img_box">
+                          <img src="src/img/크래프톤.jpg" alt="크래프톤">
+                      </div>
+                      <div class="slide_text_box">
+                          <span>05</span>
+                          <p class="title">희망 기업</p>
+                          <p class="desc">크래프톤은 차별화된 크리에이티브를 가진 글로벌 제작 스튜디오들과
+                            고유한 즐거움이 있는 게임을 발굴하여 전 세계에 퍼블리싱합니다.
+                      
+                          </p>
+                      </div>
+                  </li>              
+              </ul>
+          </div>
+          <p class="controls">
+              <span class="prev">⬅️</span>
+              <span class="next">➡️</span>
+          </p>
+            </div>
+            
+          </section>
+
+          <section class="section-project">
+            <a name="project"></a>
+            <h2>Issue & Project.</h2>
+            <article class="box-project">
+              <div>
+                <img
+                  class="img-project"
+                  src="src/img/젠더갈등.jpg"
+                  alt="젠더갈등"
+                />
+                <button
+                  class="btn-detail"
+                  type="button"
+                  onclick="location.href='https://www.chosun.com/national/national_general/2022/05/06/7GH3AXAYIJHQVK6EDV4CX75PUA/';"
+                >
+                  자세히
+                </button>
+              </div>
+              <div class="txt-project">
+                <h3>사회적 이슈</h3>
+                <dl>
+                  <dt>젠더 갈등</dt>
+                  <dd>최근 남녀 젠더 갈등이 양극화 되기 시작했다.</dd>
+                  <dt>최근 사회 이슈</dt>
+                  <dd>12사단 훈련병 사망 사건</dd>
+                  <dt>나의 견해</dt>
+                  <dd>서로를 이해하고 존중하며 더 이상 이런 일이 일어나선 안된다.</dd>
+                </dl>
+              </div>
+            </article>
+    
+            <article class="box-project">
+              <div>
+                <img
+                  class="img-project"
+                  src="src/img/blog1.png"
+                  alt="블로그 이미지"
+                />
+                <button
+                  class="btn-detail"
+                  type="button"
+                  onclick="location.href='https:////velog.io/@hye_rin/나만의-자기소개-웹페이지';"
+                >
+                  자세히
+                </button>
+              </div>
+              <div class="txt-project">
+                <h3>어려웠던 부분</h3>
+                <dl>
+                  <dt>과제 개요</dt>
+                  <dd>자기 소개 웹페이지를 만드는 데 막막했다.</dd>
+                  <dt>어떤 점이 어려웠나</dt>
+                  <dd>레이아웃을 어떻게 해야할지, 어떤 기능을 넣어야할지 등</dd>
+                  <dt>해결 방법</dt>
+                  <dd>구글링과 블로그를 보고 탬플릿을 응용 및 참조했다.</dd>
+                </dl>
+              </div>
+            </article>
+          </section>
+
+        
+
+          <footer id="footer">
+            <a name="contact"></a>
+            <div class="box-footer">
+              <h2>Contact.</h2>
+              <ul class="link-sns">
+                <li>
+                <a href="https://www.instagram.com/w00sukk_/?hl=ko">
+                  <img class="img-insta"src="src/img/insta.jpg"alt="인스타"/>INSTAGRAM</a>
+                </li>
+                </ul>
+                <p>*과제 제출용 페이지입니다*</p>
+              </div>
+
+        </footer>
+        
+        <div class="modal-background">
+            <div class="modal">
+              <h3>나의 역량</h3>
+              <h4>C,C++,JAVA,HTML/CSS 등</h4>
+              <img src="src/img/컴퓨터언어.png" alt="" />
+              <p>
+                저는 소프트웨어학과를 나와 다양한 언어(C,C++,JAVA,ANDROID,HTML/CSS 등)를
+                배웠고 앞으로 필요한 언어들을 배우고 더 견고하게 강화할 것입니다.
+              </p>
+              <button type="button" class="btn-close">Close</button>
+            </div>
+          </div>
+          <div class="modal-background">
+            <div class="modal">
+              <h3>희망 진로</h3>
+              <h4>Future Plan</h4>
+              <img src="src/img/게임회사.jpeg" alt="" />
+              <p>
+                일단 3학년 내로 공모전을 나갈 것이고<br> 방학 기간 동안 학교에서는 없는
+                유니티, 언리얼 등과 같은 언어를 공부할 것이며<br> 4학년 내로 정보처리기사 자격증을 취득하여
+                학교를 졸업 후 게임회사에 입사하고싶다.
+              </p>
+              <button type="button" class="btn-close">Close</button>
+            </div>
+
+
+
+    </div>
+    <button onclick="moveToTop()" class="btn-moveTop"></button>
+    <script src="index.js"></script>
+    <script src="loading.js"></script>
+
+</main>
+</body>
+</html>
