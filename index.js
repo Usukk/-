@@ -122,18 +122,26 @@ function moveSlide(num){
 }
 
 
-nextBtn.addEventListener('click', function(){
-    if(currentIdx < slideCount-3){
-        moveSlide(currentIdx + 1);
-    } else {
-        moveSlide(0);
-    }
-})
+nextBtn.addEventListener('click', function(event) {
+  event.preventDefault(); // 기본 동작 방지
 
-prevBtn.addEventListener('click', function(){
-    if(currentIdx > 0){
-        moveSlide(currentIdx - 1);
-    } else {
-        moveSlide(slideCount - 3);
-    }
-})
+  if (currentIdx < slideCount - 3) {
+      moveSlide(currentIdx + 1);
+  } else {
+      moveSlide(0);
+  }
+
+  console.log("Next button clicked", event); // 이벤트 객체 정보 로그 출력
+});
+
+prevBtn.addEventListener('click', function(event) {
+  event.preventDefault(); // 기본 동작 방지
+
+  if (currentIdx > 0) {
+      moveSlide(currentIdx - 1);
+  } else {
+      moveSlide(slideCount - 3);
+  }
+
+  console.log("Previous button clicked", event); // 이벤트 객체 정보 로그 출력
+});
