@@ -509,6 +509,11 @@ section {
   color: #6a75ca;
   margin-top: 50px;
 }
+#footerCanvas {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #d3d3d3;
+}
 /* 모달 */
 .modal-background {
     display: none;
