@@ -297,7 +297,7 @@ section {
     margin: 10px auto;
   }
 
-/* ishue섹션 */
+/* issue섹션 */
 #section-issue{
   display: flex;
   flex-direction: column;
@@ -465,7 +465,7 @@ section {
 
 
 
-/*footer*/
+/*footer섹션*/
 
 #footer{
     display:flex;
@@ -513,6 +513,29 @@ section {
   display: block;
   margin: 20px auto;
   border: 1px solid #d3d3d3;
+}
+.iframe-container {
+  margin: 20px auto;
+  width: 300px;
+  height: 150px;
+  border: 1px solid #d3d3d3;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form input, .contact-form textarea {
+  margin: 5px;
+  padding: 10px;
+  width: 80%;
+}
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #6a75ca;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 /* 모달 */
 .modal-background {
